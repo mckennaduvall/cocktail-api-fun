@@ -3,8 +3,6 @@
 //3. connect API call to user input
 //4. print data onto HTML page
 
-
-
 //d3 select the elements
 //get reference to the button on the page with id set to 'button'
 var button = d3.select("#button");
@@ -19,9 +17,6 @@ input.on("click", runEnter);
 //this function is triggered when the button is clicked
 function runEnter() {
     d3.event.preventDefault();
-    var inputValue = input.property("value");
-    console.log(inputValue);
-
     var inputValue = input.property("value");
 
 base_url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s="
@@ -38,7 +33,7 @@ fetch(url)
 
         console.log(Object.values(json));
 
-        drinksArray = Object.values(json)
+        drinksArray = Object.values(json);
 
         drink = drinksArray[0]
 

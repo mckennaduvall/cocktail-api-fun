@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+    background-color: pink;
+  }
+  
+  h2 {
+      background-color: orange;
+  }
+
+  .topnav {
+      background-color: yellow;
+  }
+
+  #table-area {
+      background-color: green;
+  }
